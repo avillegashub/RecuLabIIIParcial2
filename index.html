@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperatorio Alvaro Villegas</title>
+    <script  src ="./js/main.js" ></script>
+    <script  src ="./js/persona.js" ></script>
+    <script  src ="./js/cliente.js" ></script>
+    <script  src ="./js/table.js" ></script>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body id = body>
+    
+    <H3>ABM Personas</H3>
+    <hr width="90%">
+
+
+    <label for="txtId" >Id:          </label>
+    <input type="text" id=txtId class="boxes" disabled>
+    <label for="txtNombre">Nombre:</label>
+    <input type="text" id=txtNombre class="boxes">
+    <label for="txtApellido">Apellido:</label>
+    <input type="text" id=txtApellido class="boxes">
+    <label for="txtEdad">Edad:     </label>
+    <input type="number" id=txtEdad class="boxes">
+    <label id = lblSexo for="selectSexo">Sexo:      </label>
+    <select id=selectSexo  >
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+    </select>
+    
+
+
+
+    <input type="button" id=btnAgregar value="Agregar">
+    <input type="button" id=btnEliminar value="Eliminar">
+    <input type="button" id=btnLimpiar value="Limpiar LocalStorage">
+
+    <hr width="90%">
+    <H3>Filtros</H3>
+    <hr width="90%">
+    
+    <label for="select">Filtrar por:  </label>
+    <select id=selectFiltro  >
+        <option value="T">Todos</option>
+        <option value="F">Femenino</option>
+        <option value="M">Masculino</option>
+    </select>
+    
+    <label for="txtPromedio">    Promedio de precio:  </label>
+    <input type="text" id=txtPromedio >
+    <input type="button" id=btnPromedio value="Calcular Promedio">
+    
+    <hr width="90%">
+    <h2 >    Campos mostrados</h2>  
+    <h4>  Tildar los campos a mostrar</h4>
+   
+    
+    <hr width="90%">
+    <input type="checkbox" id= cbID checked>
+    <label for="cbId">Id:  </label>
+    
+    <input type="checkbox" id= cbNOMBRE checked>
+    <label for="cbNombre">Nombre:  </label>
+    
+    <input type="checkbox" id= cbAPELLIDO checked>
+    <label for="cbApellido">Apellido:  </label>
+    
+    <input type="checkbox" id= cbEDAD checked>
+    <label for="cbEdad">Edad:  </label>
+
+    <input type="checkbox" id= cbSEXO checked>
+    <label for="cbSexo">Sexo:  </label>
+    <hr width="90%">
+    <H3>Lista de Personas</H3>
+    <hr width="90%">
+
+    <div>
+        <div id = d_table></div>
+    </div>
+
+
+
+</div >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
